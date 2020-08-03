@@ -1,0 +1,14 @@
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\bin\Debug\WeatherApp.exe.config
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\bin\Debug\WeatherApp.exe
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\bin\Debug\WeatherApp.pdb
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\obj\Debug\WeatherApp.Properties.Resources.resources
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csproj.CopyComplete
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\obj\Debug\WeatherApp.exe
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\obj\Debug\WeatherApp.pdb
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\obj\Debug\WeatherApp.Today.resources
+C:\Users\Asus\source\repos\WeatherApp\WeatherApp\obj\Debug\WeatherApp.Forecust3day.resources
