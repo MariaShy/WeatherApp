@@ -51,9 +51,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 225);
+            this.richTextBox1.Location = new System.Drawing.Point(315, 6);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(297, 136);
+            this.richTextBox1.Size = new System.Drawing.Size(94, 210);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -151,9 +151,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.Location = new System.Drawing.Point(145, 16);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(10, 13);
+            this.label7.Size = new System.Drawing.Size(11, 13);
             this.label7.TabIndex = 1;
             this.label7.Text = ".";
             // 
@@ -207,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 362);
+            this.ClientSize = new System.Drawing.Size(412, 220);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label8);
@@ -217,6 +218,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Today";
             this.Text = "WeatherApp";
+            this.Load += new System.EventHandler(this.Today_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

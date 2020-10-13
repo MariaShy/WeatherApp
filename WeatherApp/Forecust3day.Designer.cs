@@ -510,7 +510,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Forecust3day";
-            this.Text = "Forecust";
+            this.Text = "WeatherApp Forecust";
             this.Load += new System.EventHandler(this.Forecust_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

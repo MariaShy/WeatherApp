@@ -23,6 +23,7 @@ namespace WeatherApp
 
         private async void Forecust_Load(object sender, EventArgs e)
         {
+            
             try
             {
                 string str = "http://api.openweathermap.org/data/2.5/forecast?q=" + Program.cityName + "&APPID=1d0fd92330221c38bcc652af7481a5a1";
@@ -41,7 +42,6 @@ namespace WeatherApp
                     {
                         answer = await reader.ReadToEndAsync();
                     }
-
                 }
 
                 responce.Close();
@@ -50,39 +50,43 @@ namespace WeatherApp
 
                 Forecust.ThreeDaysForecust fCst = JsonConvert.DeserializeObject<Forecust.ThreeDaysForecust>(answer);
 
-                label25.Text = fCst.list[6].dt_txt.ToString();
-                label26.Text = fCst.list[14].dt_txt.ToString();
-                label27.Text = fCst.list[22].dt_txt.ToString();
+                int index1 = 8;
+                int index2 = index1 + 8;
+                int index3 = index2 + 8;
 
-                panel1.BackgroundImage = fCst.list[6].weather[0].Icon;
-                label1.Text = fCst.list[6].weather[0].main;
-                label2.Text = fCst.list[6].weather[0].description;
-                label3.Text = "Avg Temperature, Celsium: " + fCst.list[6].main.temp.ToString("0.0");
-                label9.Text = "Feels like, Celsium: " + fCst.list[6].main.feels_like.ToString("0.0");
-                label4.Text = "Humidity, %: " + fCst.list[6].main.humidity.ToString();
-                label5.Text = "Pressure, mm: " + ((int)fCst.list[6].main.pressure).ToString();
-                label6.Text = "Speed, km/h: " + ((int)fCst.list[6].wind.speed).ToString();
-                label7.Text = "Direction (from): " + fCst.list[6].wind.direction(fCst.list[6].wind.deg);
+                label25.Text = fCst.list[index1].dt_txt.ToString();
+                label26.Text = fCst.list[index2].dt_txt.ToString();
+                label27.Text = fCst.list[index3].dt_txt.ToString();
 
-                panel2.BackgroundImage = fCst.list[14].weather[0].Icon;
-                label8.Text = fCst.list[14].weather[0].main;
-                label10.Text = fCst.list[14].weather[0].description;
-                label11.Text = "Avg Temperature, Celsium: " + fCst.list[14].main.temp.ToString("0.0");
-                label12.Text = "Feels like, Celsium: " + fCst.list[14].main.feels_like.ToString("0.0");
-                label13.Text = "Humidity, %: " + fCst.list[14].main.humidity.ToString();
-                label14.Text = "Pressure, mm: " + ((int)fCst.list[14].main.pressure).ToString();
-                label15.Text = "Speed, km/h: " + ((int)fCst.list[14].wind.speed).ToString();
-                label16.Text = "Direction (from): " + fCst.list[14].wind.direction(fCst.list[6].wind.deg);
+                panel1.BackgroundImage = fCst.list[index1].weather[0].Icon;
+                label1.Text = fCst.list[index1].weather[0].main;
+                label2.Text = fCst.list[index1].weather[0].description;
+                label3.Text = "Avg Temperature, Celsium: " + fCst.list[index1].main.temp.ToString("0.0");
+                label9.Text = "Feels like, Celsium: " + fCst.list[index1].main.feels_like.ToString("0.0");
+                label4.Text = "Humidity, %: " + fCst.list[index1].main.humidity.ToString();
+                label5.Text = "Pressure, mm: " + ((int)fCst.list[index1].main.pressure).ToString();
+                label6.Text = "Speed, km/h: " + ((int)fCst.list[index1].wind.speed).ToString();
+                label7.Text = "Direction (from): " + fCst.list[index1].wind.direction(fCst.list[index1].wind.deg);
 
-                panel3.BackgroundImage = fCst.list[22].weather[0].Icon;
-                label17.Text = fCst.list[22].weather[0].main;
-                label18.Text = fCst.list[22].weather[0].description;
-                label19.Text = "Avg Temperature, Celsium: " + fCst.list[22].main.temp.ToString("0.0");
-                label20.Text = "Feels like, Celsium: " + fCst.list[22].main.feels_like.ToString("0.0");
-                label21.Text = "Humidity, %: " + fCst.list[22].main.humidity.ToString();
-                label22.Text = "Pressure, mm: " + ((int)fCst.list[22].main.pressure).ToString();
-                label23.Text = "Speed, km/h: " + ((int)fCst.list[22].wind.speed).ToString();
-                label24.Text = "Direction (from): " + fCst.list[22].wind.direction(fCst.list[6].wind.deg);
+                panel2.BackgroundImage = fCst.list[index2].weather[0].Icon;
+                label8.Text = fCst.list[index2].weather[0].main;
+                label10.Text = fCst.list[index2].weather[0].description;
+                label11.Text = "Avg Temperature, Celsium: " + fCst.list[index2].main.temp.ToString("0.0");
+                label12.Text = "Feels like, Celsium: " + fCst.list[index2].main.feels_like.ToString("0.0");
+                label13.Text = "Humidity, %: " + fCst.list[index2].main.humidity.ToString();
+                label14.Text = "Pressure, mm: " + ((int)fCst.list[index2].main.pressure).ToString();
+                label15.Text = "Speed, km/h: " + ((int)fCst.list[index2].wind.speed).ToString();
+                label16.Text = "Direction (from): " + fCst.list[index2].wind.direction(fCst.list[index2].wind.deg);
+
+                panel3.BackgroundImage = fCst.list[index3].weather[0].Icon;
+                label17.Text = fCst.list[index3].weather[0].main;
+                label18.Text = fCst.list[index3].weather[0].description;
+                label19.Text = "Avg Temperature, Celsium: " + fCst.list[index3].main.temp.ToString("0.0");
+                label20.Text = "Feels like, Celsium: " + fCst.list[index3].main.feels_like.ToString("0.0");
+                label21.Text = "Humidity, %: " + fCst.list[index3].main.humidity.ToString();
+                label22.Text = "Pressure, mm: " + ((int)fCst.list[index3].main.pressure).ToString();
+                label23.Text = "Speed, km/h: " + ((int)fCst.list[index3].wind.speed).ToString();
+                label24.Text = "Direction (from): " + fCst.list[index3].wind.direction(fCst.list[index3].wind.deg);
             }
             catch // not catch(Exception ex)
             {
